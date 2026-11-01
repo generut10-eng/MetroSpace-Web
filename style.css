@@ -1,0 +1,258 @@
+
+:root{--pink:#ff77b7;--hot:#ff3e9d;--pale:#ffe4f1;--ink:#25162b;--purple:#8d5bd6;--blue:#c8e9ff;--line:#e7b4d0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% 10%,#fff 0,#ffe6f3 38%,#d8d4ff 100%);color:var(--ink);font:15px Verdana,Arial,sans-serif}
+a{color:#a31c74}button,input,textarea,select{font:inherit}button{cursor:pointer;border:1px solid #b84d91;border-radius:8px;padding:8px 12px;background:linear-gradient(#fff,#ffd5eb);color:#54203f;font-weight:bold}button:hover{filter:brightness(1.04);transform:translateY(-1px)}
+header{background:linear-gradient(90deg,#ff8fc9,#bba2ff,#8edcff);padding:20px 16px;text-align:center;border-bottom:4px ridge #fff}header h1{margin:0;font-size:clamp(2rem,6vw,3.5rem);letter-spacing:2px;text-shadow:2px 3px #fff}header p{margin:6px 0 0}
+nav{position:sticky;top:0;z-index:20;display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:10px;background:#fff0f8eF;border-bottom:2px solid #e7a5cb;backdrop-filter:blur(10px)}nav a{text-decoration:none;color:#6c2458;font-weight:bold;padding:8px 11px;border:1px solid #e9a9cf;border-radius:9px;background:#fff}
+.wrap{max-width:1100px;margin:22px auto;padding:0 14px}.panel{background:#ffffffd9;border:2px solid #e7acd0;border-radius:14px;padding:17px;margin-bottom:18px;box-shadow:4px 5px 0 #d8b5ec}.panel h2{margin-top:0;color:#a32c78}.columns{display:grid;grid-template-columns: minmax(0,1.15fr) minmax(260px,.85fr);gap:18px}.mini-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}.tile{background:linear-gradient(135deg,#fff0f8,#e8e5ff);border:1px dashed #c37cb0;border-radius:10px;padding:12px;text-align:center}.tile .emoji{font-size:2rem;display:block}.muted{color:#745c76;font-size:.9rem}.profile-head{display:flex;gap:14px;align-items:center}.avatar{width:88px;height:88px;flex:none;display:grid;place-items:center;font-size:2.8rem;border-radius:50%;background:linear-gradient(135deg,#ffb9df,#c6b4ff);border:3px solid white;outline:2px solid #d78ab7}.stat{display:inline-block;margin:3px;padding:5px 8px;background:#ffe4f1;border-radius:7px}.field{width:100%;padding:9px;border:1px solid #d99bc1;border-radius:8px;margin:5px 0 10px;background:#fff}.post{padding:10px;margin:10px 0;border-left:4px solid #f17ab8;background:#fff2f9;border-radius:6px}.chatbox{height:210px;overflow:auto;background:#fff8fc;border:1px solid #e2b1ce;border-radius:8px;padding:10px}.msg{padding:6px 8px;margin:6px 0;border-radius:8px;background:#f3eaff}.msg b{color:#8b399a}.channel-buttons{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px}.channel-buttons button.active{background:#bba2ff;color:#241235}.anime-layout{display:grid;grid-template-columns:180px 1fr;gap:12px}.anime-side{background:#f4eaff;border-radius:10px;padding:10px}.anime-side button{display:block;width:100%;margin:5px 0;text-align:left}.wallpaper{min-height:120px;border-radius:10px;background:linear-gradient(135deg,#ffb4df,#d4baff,#9ee3ff);display:grid;place-items:center;font-size:2rem;text-align:center;padding:15px}
+/* iPod independiente */
+.ipod-area{background:radial-gradient(circle,#fff 0,#ffe3f2 55%,#eadfff 100%);border:2px dashed #df7eb7;border-radius:16px;padding:22px;display:grid;grid-template-columns:minmax(260px,360px) 1fr;align-items:center;gap:26px}.ipod{width:min(100%,300px);margin:auto;background:linear-gradient(115deg,#ffb8dc,#ff78bb 55%,#f34f9f);border:3px solid #e84998;border-radius:28px;padding:18px 18px 22px;box-shadow:inset 3px 3px 7px #fff9,8px 10px 0 #c99ad5,0 15px 30px #9d548a55;user-select:none}.ipod-brand{text-align:center;font-size:12px;letter-spacing:4px;color:#8b235e;font-weight:bold;margin-bottom:12px}.ipod-screen{height:132px;background:linear-gradient(#eafaff,#c4f0ff);border:5px solid #f8d4e9;border-radius:8px;box-shadow:inset 0 0 0 1px #6a93a8;padding:10px;color:#16374c;overflow:hidden}.screen-top{display:flex;justify-content:space-between;border-bottom:1px solid #8eb3c5;padding-bottom:4px;font-size:10px}.screen-title{font-size:14px;font-weight:bold;margin:10px 0 4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.screen-artist{font-size:11px}.progress{height:5px;background:#8ab6c7;border-radius:5px;margin-top:10px;overflow:hidden}.progress span{display:block;height:100%;width:0;background:#e94f9f}.ipod-wheel{position:relative;width:190px;height:190px;border-radius:50%;margin:20px auto 0;background:radial-gradient(circle,#fff 0 26%,#f9f3f7 27% 44%,#fff 45% 56%,#f7d9eb 57% 100%);border:2px solid #e7a0c9;box-shadow:inset 0 2px 8px #c17ba855;touch-action:none}.wheel-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:62px;height:62px;border-radius:50%;border:2px solid #d8b6cd;background:linear-gradient(#fff,#f2e2ef);display:grid;place-items:center;color:#8b4775;font-size:11px;font-weight:bold}.wheel-btn{position:absolute;background:transparent;border:0;border-radius:50%;padding:4px;color:#a54b81;font-size:15px;min-width:32px;min-height:28px;box-shadow:none}.wheel-btn:hover{background:#f8cce4;transform:none}.wheel-menu{top:7px;left:50%;transform:translateX(-50%)}.wheel-prev{left:7px;top:50%;transform:translateY(-50%)}.wheel-next{right:7px;top:50%;transform:translateY(-50%)}.wheel-play{bottom:7px;left:50%;transform:translateX(-50%)}.wheel-hint{text-align:center;font-size:10px;color:#9a4c7c;margin-top:7px}.song-list{padding-left:20px}.song-list li{padding:5px;border-radius:6px;cursor:pointer}.song-list li.selected{background:#ffe0f0;font-weight:bold;color:#a32170}.song-list li:hover{background:#f4e6ff}footer{text-align:center;padding:25px;color:#785c80}
+@media(max-width:720px){.columns,.ipod-area{grid-template-columns:1fr}.anime-layout{grid-template-columns:1fr}.anime-side{display:flex;flex-wrap:wrap;gap:5px}.anime-side button{width:auto}.ipod{max-width:280px}}
+
+/* REDISEÑO: iPod clásico rosa inspirado en la referencia */
+.ipod-area{background:linear-gradient(135deg,#fff7fb,#fce4f1 48%,#f1e7ff);border:1px solid #e9bfd5;border-radius:22px;padding:28px;grid-template-columns:minmax(280px,390px) 1fr;gap:34px}
+.ipod{position:relative;width:min(100%,292px);min-height:505px;margin:auto;padding:20px 20px 24px;border:1px solid #d77ca8;border-radius:34px;background:linear-gradient(110deg,#ffd9e9 0%,#f7a9ca 18%,#fbd0e2 42%,#ed91bb 72%,#ffd2e4 100%);box-shadow:inset 2px 2px 5px #fff, inset -3px -4px 10px #bd5e8c66,0 2px 3px #fff,0 16px 25px #7f456433,9px 12px 0 #d6a2c0;}
+.ipod:before{content:"";position:absolute;inset:7px;border-radius:28px;border:1px solid #ffffff8c;pointer-events:none}
+.ipod-brand{font-family:Arial,sans-serif;text-align:center;font-size:17px;letter-spacing:1px;color:#fff;text-shadow:0 1px 1px #a94f7d;margin:0 0 14px;font-weight:600}
+.ipod-screen{height:158px;background:linear-gradient(145deg,#f8fcff,#dce8ef 55%,#cbd8e2);border:7px solid #e8a4c3;border-radius:5px;box-shadow:inset 0 0 0 1px #8397a5,0 1px 3px #9b4e7655,0 0 0 1px #fff8;padding:11px;color:#253541;font-family:Arial,sans-serif}
+.screen-top{font-size:10px;color:#4d6170;border-bottom:1px solid #9baeb8;padding-bottom:5px}.screen-title{font-size:15px;margin:14px 0 5px;color:#24323d}.screen-artist{font-size:11px;color:#536573}.progress{background:#aabac3}.progress span{background:#cf6d9e}
+.ipod-wheel{width:204px;height:204px;margin:27px auto 0;border:1px solid #d88eaf;background:radial-gradient(circle,#f9e9f0 0 24%,#d78eae 24.5% 25.5%,#f8edf2 26% 44%,#e9b5cd 44.5% 46%,#f9e8f0 46.5% 66%,#e7a6c3 67% 100%);box-shadow:inset 0 3px 7px #a64d7955,0 1px 2px #fff;}
+.wheel-center{width:66px;height:66px;border:1px solid #d9a5bd;background:linear-gradient(145deg,#fff,#eadde4);color:#97617b;font-size:10px;box-shadow:0 1px 3px #a65e7e55}
+.wheel-btn{color:#a65b7f;font-family:Arial,sans-serif;font-size:12px;font-weight:700;text-shadow:0 1px #fff;min-width:38px;min-height:30px}.wheel-menu{top:12px}.wheel-prev{left:12px}.wheel-next{right:12px}.wheel-play{bottom:12px}.wheel-hint{font-size:9px;letter-spacing:1px;color:#a45f80;margin-top:11px}
+#ipodHeading{color:#9c3e72}.song-list li{padding:8px 10px;border-bottom:1px solid #f0d7e5}.song-list li.selected{background:#fbe2ee;color:#9e376f;border-radius:7px}
+@media(max-width:720px){.ipod-area{padding:18px}.ipod{max-width:292px}}
+
+/* MetroSpace: estética de portal personal de principios de los 2000 */
+body{background:#d7d7d7;color:#222;font:13px Tahoma,Verdana,Arial,sans-serif}
+header{background:#333;color:#fff;text-align:left;padding:18px max(18px,calc((100% - 980px)/2));border:0}
+header h1{font: bold 30px Georgia,serif;letter-spacing:1px;text-shadow:none}
+nav{position:static;background:#e9e9e9;border-bottom:1px solid #999;gap:0;justify-content:flex-start;padding:7px max(10px,calc((100% - 980px)/2));backdrop-filter:none}
+nav a{background:#e9e9e9;border:0;border-right:1px solid #aaa;border-radius:0;color:#003366;padding:7px 13px;text-decoration:underline;font-weight:normal}
+.wrap{max-width:980px;margin:14px auto}.panel{background:#fff;border:1px solid #888;border-radius:0;padding:14px;margin-bottom:12px;box-shadow:none}
+.panel h2{font: bold 18px Georgia,serif;color:#333;border-bottom:1px solid #aaa;padding-bottom:7px}
+.columns{display:block}.wallpaper{background:#eee;border:1px solid #aaa;border-radius:0;color:#333;font:italic 24px Georgia,serif}
+.tile,.field,.chatbox,.msg,.anime-side,.stat{border-radius:0}.tile{background:#f4f4f4;border:1px solid #aaa}.field{border:1px solid #999;background:#fff}
+button{border:1px solid #777;border-radius:2px;background:linear-gradient(#fff,#ddd);color:#222;font-weight:normal}button:hover{filter:none;transform:none}
+.ipod-area{background:#eee;border:1px solid #999;border-radius:0;box-shadow:none}
+.ipod{box-shadow:none;border:1px solid #d77ca8}
+.ipod:before{display:none}
+.ipod-brand{display:none}
+.ipod-screen{border:0;border-radius:2px;box-shadow:none;outline:1px solid #8397a5}
+.screen-top{border-bottom:0}
+.ipod-wheel{box-shadow:none}
+.wheel-btn,.wheel-center{transition:background-color .08s,border-color .08s,box-shadow .08s}
+.wheel-btn:hover{background:transparent;transform:none}
+.wheel-btn:active,.wheel-center:active,.wheel-btn.is-pressed,.wheel-center.is-pressed{background:#e7a9c4;box-shadow:inset 0 2px 4px #8c4265;border-color:#a94f78;transform:none}
+.wheel-menu{transform:translateX(-50%)}.wheel-menu:active{transform:translateX(-50%)}
+.wheel-prev{transform:translateY(-50%)}.wheel-prev:active{transform:translateY(-50%)}
+.wheel-next{transform:translateY(-50%)}.wheel-next:active{transform:translateY(-50%)}
+.wheel-play{transform:translateX(-50%)}.wheel-play:active{transform:translateX(-50%)}
+.mp3-label{display:block;font-weight:bold;margin:8px 0 3px}
+footer{color:#555}
+
+
+/* MetroSpace: rosa pastel, aire Y2K y detalles de nube */
+body{background:#f7dce9;color:#63334e}
+header{background:linear-gradient(90deg,#f7a8cd,#ffd8e9 55%,#c9e8f7);color:#743d5d;border-bottom:3px double #d88db5}
+header h1{color:#9b4775;text-shadow:2px 2px #fff}
+nav{background:#fff0f7;border-color:#e6a1c3}
+nav a{background:#fff7fb;color:#a04478;border-right:1px solid #e9b6d0}
+.panel{background:#fffafd;border-color:#d995b8}
+.panel h2{color:#a04478;border-color:#e7b6cf}
+.tile{background:#fff0f7;border-color:#d995b8}
+.wallpaper{background:linear-gradient(135deg,#ffe3f0,#f7c3dc,#d9eff8);color:#9b4775}
+.ipod-area{background:linear-gradient(135deg,#fff4fa,#f8d8e8 60%,#e5f4fb);border:1px solid #df9fbe;padding:24px;display:grid;grid-template-columns:minmax(280px,360px) 1fr;align-items:center;gap:28px}
+.ipod-body{width:min(100%,320px);height:390px;margin:auto;padding:18px 20px 20px;border:1px solid #e66b9e;border-radius:36px;background:linear-gradient(145deg,#ffb4d0 0%,#ff7eae 48%,#df4f88 100%);box-shadow:inset 0 2px 4px #fff9,inset 0 -4px 8px #9f285866,0 10px 20px #a44c7850;display:flex;flex-direction:column;justify-content:space-between;align-items:center;position:relative;user-select:none}
+.ipod-screen-bezel{width:100%;height:190px;padding:6px;background:#25212a;border:2px solid #51424b;border-radius:14px;overflow:hidden}
+.ipod-lcd{width:100%;height:100%;background:linear-gradient(#f9fbff,#dce6ee);color:#293746;border-radius:8px;display:flex;flex-direction:column;overflow:hidden;font-family:Arial,sans-serif}
+.ipod-lcd-header{height:24px;flex:none;padding:0 8px;background:linear-gradient(#f5f7fa,#d4dce7);border-bottom:1px solid #c2ccd8;display:flex;align-items:center;justify-content:space-between;font-size:11px;font-weight:bold;color:#526273}
+.ipod-lcd-content{flex:1;min-height:0;padding:10px 9px;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+#screenSong{font-size:15px;font-weight:bold;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#283746}
+#screenArtist{font-size:11px;color:#607080;margin-top:5px}
+.ipod-lcd-footer{height:21px;flex:none;padding:0 8px;background:linear-gradient(#dce4ed,#c3cedd);border-top:1px solid #b3c0d0;display:flex;align-items:center;justify-content:space-between;font-size:10px;color:#536273}
+.ipod-wheel{position:relative;width:155px;height:155px;margin:0 auto 1px;border-radius:50%;background:linear-gradient(135deg,#fff 0%,#f4f1f4 62%,#dcd6dc 100%);box-shadow:0 5px 11px #772d5050,inset 0 2px 4px #fff,inset 0 -2px 5px #7774;touch-action:none}
+.wheel-btn{position:absolute;z-index:2;border:0;background:transparent!important;box-shadow:none!important;color:#777;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;padding:5px;min-width:32px;min-height:28px;border-radius:50%;text-shadow:0 1px #fff;transition:background .08s,box-shadow .08s}
+.wheel-btn:hover{transform:none;background:#f8d6e6!important}
+.wheel-menu{top:5px;left:50%;transform:translateX(-50%)}
+.wheel-prev{left:4px;top:50%;transform:translateY(-50%)}
+.wheel-next{right:4px;top:50%;transform:translateY(-50%)}
+.wheel-play{bottom:4px;left:50%;transform:translateX(-50%)}
+.wheel-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;border:1px solid #d5c5ce;background:radial-gradient(circle at 35% 30%,#fff,#f1e8ee 75%,#dfd2da);display:grid;place-items:center;color:#9a6c83;font-size:10px;font-weight:bold;z-index:3;box-shadow:0 2px 5px #7a526344}
+.wheel-btn:active,.wheel-center:active,.wheel-btn.is-pressed,.wheel-center.is-pressed{background:#edb4ce!important;box-shadow:inset 0 2px 4px #884663!important;transform:none}
+.wheel-menu:active,.wheel-menu.is-pressed{transform:translateX(-50%)}
+.wheel-prev:active,.wheel-prev.is-pressed{transform:translateY(-50%)}
+.wheel-next:active,.wheel-next.is-pressed{transform:translateY(-50%)}
+.wheel-play:active,.wheel-play.is-pressed{transform:translateX(-50%)}
+.wheel-hint{font-size:9px;color:#8f4b70;text-align:center;margin-top:5px;letter-spacing:.5px}
+.song-list li{border-bottom:1px solid #f0d1e1}
+.song-list li.selected{background:#ffe4f0;color:#a04478}
+#ipodHeading{color:#a04478}
+@media(max-width:720px){.ipod-area{grid-template-columns:1fr;padding:16px}.ipod-body{max-width:320px}}
+
+
+/* MetroSpace — emo / retro 2000s */
+:root{--pink:#ff168d;--hot:#ff3b9f;--pale:#ffd6eb;--ink:#f5e5ef;--purple:#8d3976;--blue:#c8e9ff;--line:#672044}
+html{scroll-behavior:auto}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% -15%,#351326 0,#100b12 48%,#070609 100%);color:#f4e6ee;font:14px Tahoma,Verdana,Arial,sans-serif}
+header{background:#0b080d;color:#ff58ad;text-align:center;padding:22px 14px 16px;border:0;border-bottom:1px solid #7b2450}
+header h1{font:bold 34px Georgia,serif;letter-spacing:3px;color:#ff299b;text-shadow:0 0 10px #ff168d66}
+header p{color:#d69ab9;letter-spacing:2px;text-transform:uppercase;font-size:10px}
+nav.main-nav{display:none}
+.wrap{max-width:1000px;margin:26px auto;padding:0 16px}
+.panel{display:none;background:linear-gradient(145deg,#171018,#100b11);border:1px solid #70234e;border-radius:3px;padding:22px;margin-bottom:20px;box-shadow:0 0 22px #0009,4px 4px 0 #260d1d}
+.panel.active{display:block}
+.panel h2{color:#ff55ae;font: bold 23px Georgia,serif;border-bottom:1px solid #57203f;padding-bottom:10px}
+p,label{color:#e8c7d8}a{color:#ff69b5}
+button{cursor:pointer;border:1px solid #b52d72;border-radius:2px;padding:9px 13px;background:linear-gradient(#351426,#1b0d17);color:#ffd9eb;font-weight:bold}
+button:hover{background:linear-gradient(#581b3d,#24101d);color:#fff;filter:none;transform:none}
+.field{width:100%;padding:10px;border:1px solid #793455;border-radius:2px;margin:5px 0 10px;background:#0b080d;color:#ffe6f2}
+.muted{color:#bd91a8;font-size:.88rem}
+.profile-head,.anime-layout,.ipod-area{background:#110b12;border-color:#6d244c}
+.stat,.tile,.post,.msg,.chatbox,.anime-side{background:#1c101a;color:#f1d9e6;border:1px solid #54203d;border-radius:2px}
+.post{border-left:3px solid #ff168d}.msg b{color:#ff69b5}.anime-side button{width:100%;text-align:left;margin:5px 0}
+.wallpaper{background:repeating-linear-gradient(135deg,#190d17 0 12px,#24101f 12px 24px);border:1px solid #7b2450;color:#ff5bad;font:italic 24px Georgia,serif}
+.home-panel{text-align:center;padding:clamp(22px,5vw,52px);border-color:#a32968;background:radial-gradient(ellipse at center,#24101e 0,#110b12 68%)}
+.home-brand{font: bold clamp(38px,8vw,70px) Georgia,serif;letter-spacing:5px;color:#ff299b;text-shadow:0 0 7px #ff168d,0 0 24px #ff168d55}
+.home-kicker{font-size:10px;letter-spacing:4px;color:#c47b9f;margin:6px 0 30px}
+.home-panel h2{border:0;margin:0 0 8px;font-size:clamp(21px,4vw,30px)}
+.home-copy{color:#d6b0c5;margin-bottom:28px}
+.home-menu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:660px;margin:0 auto}
+.home-tile{min-height:116px;text-align:left;padding:17px 19px;background:linear-gradient(145deg,#21111d,#100b11);border:1px solid #8a2b59;box-shadow:inset 0 0 16px #ff168d0b;display:flex;flex-direction:column;gap:6px}
+.home-tile span{font-size:10px;color:#b86b91;letter-spacing:2px}.home-tile strong{font: bold 22px Georgia,serif;color:#ff55ae}.home-tile small{font-size:11px;color:#c8a3b6}
+.home-footer{margin-top:32px;font-size:9px;letter-spacing:3px;color:#89516e}
+.back-home{margin-bottom:18px;background:#190d16;border-color:#763050;color:#f6c6dc}
+.media-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:16px}
+.media-gallery img,.media-gallery video{width:100%;max-height:240px;object-fit:contain;background:#050407;border:1px solid #7b2450}
+footer{text-align:center;color:#925c78;padding:24px;font-size:10px;letter-spacing:3px}
+/* Mantener el iPod rosa como pieza protagonista dentro de la estética oscura */
+.ipod-area{background:linear-gradient(135deg,#190d17,#24101e);border:1px solid #70234e;border-radius:2px}
+.ipod-body{box-shadow:0 12px 28px #000b,0 0 0 1px #ff6bb0}
+.ipod-heading,#ipodHeading{color:#ff55ae}
+.song-list li{color:#f2d7e5;border-bottom:1px solid #51203b}.song-list li.selected{background:#41172f;color:#ff8bc4}
+@media(max-width:720px){.home-menu{grid-template-columns:1fr}.home-tile{min-height:92px}.wrap{margin:14px auto}.panel{padding:16px}.ipod-area{grid-template-columns:1fr}}
+
+
+.metro-logo{display:block;width:116px;height:116px;object-fit:contain;margin:0 auto 14px;border:0;box-shadow:none;background:transparent}
+@media(max-width:720px){.metro-logo{width:96px;height:96px}}
+
+/* Inicio limpio: GIF grande, sin marco ni títulos extra */
+body{background:radial-gradient(ellipse at 50% 0%,#351326 0,#100b12 52%,#070609 100%)}
+.wrap{max-width:1100px;margin:0 auto;padding:22px 16px}
+.home-panel{min-height:100vh;display:none;justify-content:flex-start;align-items:center;padding:26px 18px 42px;border:0;background:transparent;box-shadow:none}
+.home-panel.active{display:flex;flex-direction:column}
+.metro-logo{display:block;width:min(88vw,620px);height:auto;max-height:58vh;object-fit:contain;object-position:center;margin:0 auto 8px;border:0;outline:0;box-shadow:none;background:transparent;align-self:center}
+.home-caption{display:block;text-align:center;font-family:"LeftHandedCursiva",cursive!important;font-style:normal!important;font-weight:normal!important;font-size:clamp(34px,5vw,52px)!important;line-height:1.2;letter-spacing:1px!important;color:#ff168d!important;text-shadow:0 0 5px #ff168d,0 0 12px #ff168d88,0 0 22px #ff168d66!important;margin:0 auto 30px!important;}
+.home-menu{width:min(100%,660px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 auto}
+.home-tile{min-height:76px;justify-content:center;align-items:center;text-align:center;padding:16px;background:linear-gradient(145deg,#21111d,#100b11);border:1px solid #8a2b59;box-shadow:0 0 14px #ff168d16}
+.home-tile strong{font:bold 22px Georgia,serif;color:#ff55ae}
+.home-tile span,.home-tile small{display:none!important}
+header,nav.main-nav,body>footer{display:none!important}
+.chat-page{padding:16px}
+.discord-shell{display:grid;grid-template-columns:210px minmax(0,1fr);min-height:68vh;border:1px solid #63304d;background:#171019;box-shadow:0 0 24px #0008}
+.discord-sidebar{padding:18px 12px;background:#100b12;border-right:1px solid #54203d}
+.discord-sidebar h2{border:0;margin:0 0 20px}.discord-server,.discord-channel{padding:10px;border-radius:4px;margin:5px 0;color:#e9c7d8}.discord-channel.active{background:#3b1b30;color:#ff78ba}
+.discord-note,.discord-local-note{font-size:11px;color:#b88da5;line-height:1.5}.discord-note{margin-top:28px}
+.discord-main{display:flex;flex-direction:column;min-width:0}.discord-top{display:flex;align-items:center;gap:14px;padding:16px;border-bottom:1px solid #54203d;color:#ffe3f0}.discord-top span{font-size:12px;color:#b88da5}
+.discord-messages{flex:1;min-height:260px;max-height:52vh;overflow:auto;padding:16px}.discord-welcome{color:#cdaabd;padding:12px;border-bottom:1px solid #3c2031;margin-bottom:12px}
+.discord-message{display:flex;gap:10px;margin:14px 0;color:#f2dce8;overflow-wrap:anywhere}.discord-avatar{width:34px;height:34px;flex:none;border-radius:50%;display:grid;place-items:center;background:#51213d;color:#ffb5d5}.discord-message strong{color:#ff78ba}.discord-message p{margin:4px 0;color:#f2dce8;white-space:pre-wrap}
+.discord-message img,.discord-message video{display:block;max-width:min(100%,420px);max-height:280px;margin-top:8px;border:1px solid #6e3151}
+.discord-compose{display:grid;grid-template-columns:1fr auto;gap:8px;padding:12px;border-top:1px solid #54203d}.discord-compose #globalChatName{grid-column:1/-1;max-width:220px}.discord-compose textarea{resize:vertical;margin:0}.attach-label{align-self:center;color:#ff8ac3;cursor:pointer;padding:8px}.discord-compose button{align-self:center}.discord-local-note{padding:0 14px 12px;margin:0}
+@media(max-width:650px){.home-menu{grid-template-columns:1fr}.metro-logo{width:min(88vw,460px);max-height:55vh;margin-left:auto;margin-right:auto}.discord-shell{grid-template-columns:1fr}.discord-sidebar{border-right:0;border-bottom:1px solid #54203d}.discord-sidebar h2{margin-bottom:8px}.discord-note{margin-top:10px}.discord-messages{max-height:48vh}}
+
+
+@font-face{font-family:'LeftHandedCursiva';src:url("assets/fonts/MetroSpaceEmbedded.ttf") format('truetype');font-weight:normal;font-style:normal;font-display:swap;}
+.home-caption{font-family:'LeftHandedCursiva',cursive!important;font-style:normal!important;font-weight:normal!important;font-size:clamp(30px,5vw,46px)!important;letter-spacing:1px!important;color:#ff168d!important;text-shadow:0 0 5px #ff168d,0 0 12px #ff168d88!important;margin:0 auto 30px!important;}
+
+/* Google Search integrado a MetroSpace */
+.google-search-panel{max-width:850px;margin:0 auto}
+.google-search-intro{color:#d6b0c5;margin:8px 0 18px}
+.google-search-frame{min-height:250px;padding:16px;background:#0b080d;border:1px solid #793455}
+.google-search-frame .gcse-search,.google-search-frame .gsc-control-cse{background:transparent!important;border:0!important;padding:0!important}
+.google-search-frame .gsc-control-cse{font-family:Tahoma,Verdana,sans-serif!important}
+.google-search-frame .gsc-input-box{background:#fff!important;border:1px solid #b52d72!important;border-radius:2px!important}
+.google-search-frame input.gsc-input{color:#222!important;background:#fff!important}
+.google-search-frame .gsc-search-button-v2{background:#351426!important;border:1px solid #b52d72!important;border-radius:2px!important}
+.google-search-frame .gsc-webResult.gsc-result,.google-search-frame .gsc-results .gsc-imageResult{background:#171019!important;border-color:#54203d!important}
+.google-search-frame .gs-title,.google-search-frame .gs-title *{color:#ff79b9!important}
+.google-search-frame .gs-snippet,.google-search-frame .gsc-url-top{color:#e8c7d8!important}
+.google-search-frame .gsc-cursor-box{border-color:#54203d!important}
+.google-search-frame .gsc-cursor-page{color:#ff79b9!important}
+.google-setup-note{padding:12px;border:1px dashed #793455;background:#1c101a;color:#d6b0c5;font-size:12px;line-height:1.6}
+
+
+/* iPod: tipografía cursiva original y controles estables */
+#ipodTitle,#ipodHeading,.ipod-area .song-list,.ipod-area .song-list li,.ipod-area .mp3-label,.ipod-area .wheel-btn,.ipod-area .wheel-center,.ipod-area .wheel-hint{font-family:'LeftHandedCursiva',cursive!important;font-weight:normal!important;}
+#ipodTitle{color:#ff55ae!important;font-size:clamp(34px,5vw,48px);letter-spacing:1px;text-shadow:0 0 8px #ff168d88;}
+#ipodHeading{font-size:30px;color:#ff55ae!important;}
+#ipodDevice .ipod-wheel{position:relative;isolation:isolate;flex:none;transform:none!important;transition:none!important;}
+#ipodDevice .wheel-btn,#ipodDevice .wheel-center{position:absolute;z-index:5;transform:none;transition:background-color .12s,box-shadow .12s;cursor:pointer;}
+#ipodDevice .wheel-menu{top:12px;left:50%;right:auto;bottom:auto;transform:translateX(-50%)!important;}
+#ipodDevice .wheel-prev{left:12px;top:50%;right:auto;bottom:auto;transform:translateY(-50%)!important;}
+#ipodDevice .wheel-next{right:12px;top:50%;left:auto;bottom:auto;transform:translateY(-50%)!important;}
+#ipodDevice .wheel-play{bottom:12px;left:50%;top:auto;right:auto;transform:translateX(-50%)!important;}
+#ipodDevice .wheel-center{left:50%;top:50%;transform:translate(-50%,-50%)!important;}
+#ipodDevice .wheel-btn:hover,#ipodDevice .wheel-center:hover{filter:none!important;background:#f4c5dc!important;}
+#ipodDevice .wheel-btn:active,#ipodDevice .wheel-center:active{transform:inherit!important;}
+#ipodDevice .wheel-menu:hover,#ipodDevice .wheel-menu:active{transform:translateX(-50%)!important;}
+#ipodDevice .wheel-prev:hover,#ipodDevice .wheel-prev:active{transform:translateY(-50%)!important;}
+#ipodDevice .wheel-next:hover,#ipodDevice .wheel-next:active{transform:translateY(-50%)!important;}
+#ipodDevice .wheel-play:hover,#ipodDevice .wheel-play:active{transform:translateX(-50%)!important;}
+#ipodDevice .wheel-center:hover,#ipodDevice .wheel-center:active{transform:translate(-50%,-50%)!important;}
+#ipodDevice .wheel-hint{font-family:'LeftHandedCursiva',cursive!important;font-size:15px;letter-spacing:0;}
+#ipodDevice button{touch-action:manipulation;}
+
+/* Rueda fiel a la referencia: MENU arriba, iconos laterales e inferior, centro liso */
+.ipod-wheel .wheel-btn{font-family:Arial,sans-serif!important;font-weight:700;line-height:1;display:grid;place-items:center;color:#17171b!important;background:transparent!important;border:0!important;box-shadow:none!important;transition:none!important;transform:none!important;padding:0!important}
+.ipod-wheel .wheel-menu{font-size:12px!important;top:10px!important;left:50%!important;transform:translateX(-50%)!important}
+.ipod-wheel .wheel-prev,.ipod-wheel .wheel-next{font-size:16px!important;top:50%!important}
+.ipod-wheel .wheel-prev{left:10px!important;transform:translateY(-50%)!important}
+.ipod-wheel .wheel-next{right:10px!important;transform:translateY(-50%)!important}
+.ipod-wheel .wheel-play{font-size:15px!important;bottom:10px!important;left:50%!important;transform:translateX(-50%)!important;letter-spacing:-2px}
+.ipod-wheel .wheel-btn:hover,.ipod-wheel .wheel-btn:active,.ipod-wheel .wheel-btn:focus{background:transparent!important;filter:none!important;box-shadow:none!important}
+.ipod-wheel .wheel-center{font-size:0!important;color:transparent!important}
+
+
+
+@font-face{font-family:"LeftHandedCursiva";src:url("assets/fonts/MetroSpaceEmbedded2.ttf") format("truetype");font-display:swap}
+#ipodTitle,#ipodHeading,.ipod-body,.ipod-lcd,.ipod-lcd button,.ipod-menu-list,.ipod-status,.song-list,.mp3-label,.ipod-area label,.ipod-area p{font-family:"LeftHandedCursiva",cursive!important}
+.ipod-lcd-content{position:relative;justify-content:flex-start}
+.ipod-menu-list{width:100%;display:flex;flex-direction:column;gap:2px;font-size:15px;line-height:1.15;color:#243746}
+.ipod-menu-list[hidden]{display:none!important}
+.ipod-menu-option{padding:3px 7px;border-radius:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ipod-menu-option.selected{background:#28618b;color:#fff}
+.ipod-screen-bezel,.ipod-lcd,.ipod-body,.ipod-wheel{box-sizing:border-box}
+.ipod-body{overflow:visible}
+.ipod-wheel{flex:none;isolation:isolate}
+.ipod-wheel button{position:absolute!important;z-index:5!important;display:grid;place-items:center;line-height:1;white-space:nowrap;cursor:pointer;touch-action: manipulation;transition:none!important}
+.ipod-wheel button:hover,.ipod-wheel button:focus-visible{transform:var(--wheel-transform,none)!important;filter:none!important;outline:1px solid #d77da7;outline-offset:1px}
+.wheel-menu{--wheel-transform:translateX(-50%)}.wheel-center{--wheel-transform:translate(-50%,-50%)}.wheel-prev,.wheel-next{--wheel-transform:translateY(-50%)}.wheel-play{--wheel-transform:translateX(-50%)}
+.wheel-menu,.wheel-prev,.wheel-next,.wheel-play{font-size:10px!important;min-width:38px!important;min-height:28px!important;color:#9a3d6c!important;background:transparent!important}
+.wheel-center{font-size:10px!important;min-width:0!important;min-height:0!important;color:#9a3d6c!important;touch-action:manipulation}
+.ipod-area .ipod-status{font-family:"LeftHandedCursiva",cursive!important}
+
+
+
+/* Tipografía Hellspire aplicada exclusivamente al reproductor iPod */
+@font-face {
+  font-family: 'Hellspire';
+  src: url("assets/fonts/MetroSpaceEmbedded3.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+#ipodDevice, #ipodDevice *,
+#ipodHeading,
+.ipod-area > div:last-child .muted,
+.ipod-area > div:last-child .mp3-label,
+.ipod-area > div:last-child .song-list,
+.ipod-area > div:last-child .song-list *,
+.ipod-area > div:last-child #ipodStatus {
+  font-family: 'Hellspire', sans-serif !important;
+}
+
+/* Control de volumen independiente del iPod */
+.metro-volume{width:min(430px,92%);margin:20px auto 8px;padding:15px 18px;border:1px solid #e7a9ce;border-radius:16px;background:linear-gradient(145deg,#fff7fc,#fce7f4);box-shadow:0 5px 18px rgba(190,91,145,.13);color:#733b5c;font-family:inherit}
+.metro-volume label{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13px;letter-spacing:1px}
+.metro-volume .volume-title{font-weight:700}
+.metro-volume .volume-value{font-weight:700;color:#d34d9a;font-variant-numeric:tabular-nums}
+.metro-volume .volume-controls{display:flex;align-items:center;gap:12px;margin-top:10px;font-size:20px;color:#d34d9a}
+.metro-volume input[type=range]{width:100%;accent-color:#dc70ad;cursor:pointer}

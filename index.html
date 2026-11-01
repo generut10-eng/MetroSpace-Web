@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MetroSpace</title>
+
+
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<main class="wrap">
+<section id="casa" class="panel active home-panel">
+  <img class="metro-logo" src="assets/images/metro-logo.png" alt="Logo MetroSpace">
+  <div class="home-caption">MySpace era Freak</div>
+  <div class="home-menu" aria-label="Secciones">
+    <button class="home-tile" data-open="ipod"><strong>iPod</strong></button>
+    <button class="home-tile" data-open="anime"><strong>Anime</strong></button>
+    <button class="home-tile" data-open="chat"><strong>Chat</strong></button>
+    <button class="home-tile" data-open="mi-espacio"><strong>Tu espacio</strong></button>
+    <button class="home-tile" data-open="google-search"><strong>Google Search</strong></button>
+  </div>
+</section>
+<section id="mi-espacio" class="panel">
+<button class="back-home" data-open="casa">← Volver al inicio</button><h2>Mi espacio</h2>
+<div class="profile-head"><img id="msAvatar" class="avatar" alt="Foto de perfil" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Crect width='100%25' height='100%25' fill='%23401830'/%3E%3Ctext x='50%25' y='60%25' font-size='48' text-anchor='middle' fill='%23ff78ba'%3E%E2%99%A1%3C/text%3E%3C/svg%3E"><div><h3 id="profileName">Angie's Space</h3><p id="profileMood">Mood: escuchando música y viendo anime</p><span class="stat" id="msOnlineBadge">● Online</span><span class="stat" id="msFriendCount">0 amigos</span><p class="muted" id="msLastActive">Última actividad: ahora</p><p class="muted" id="msProfileUrl">metrospace.local/angie</p></div></div>
+<div class="channel-buttons" id="msTabs">
+<button class="active" data-ms-tab="perfil">Perfil</button><button data-ms-tab="amigos">Amigos</button><button data-ms-tab="contacto">Contacto</button><button data-ms-tab="blog">Blog</button><button data-ms-tab="comentarios">Comentarios</button><button data-ms-tab="blurbs">About / Blurbs</button><button data-ms-tab="intereses">Intereses</button><button data-ms-tab="enlaces">Enlaces</button><button data-ms-tab="comunidad">Comunidad</button><button data-ms-tab="apariencia">Personalizar</button>
+</div><div id="msWorkspace" class="post" aria-live="polite"></div>
+<p class="muted">MetroSpace guarda estos datos en este navegador. Las acciones entre diferentes personas (mensajes entregados, solicitudes, presencia compartida y moderación real) requieren un servidor y cuentas conectadas; aquí funcionan como espacio personal local.</p>
+</section>
+
+<section id="anime" class="panel"><button class="back-home" data-open="casa">← Volver al inicio</button><h2> Anime Club</h2><p>Un club para platicar de anime, compartir recomendaciones y dejar mensajes en distintos canales.</p><div class="anime-layout"><aside class="anime-side"><b>CANALITOS</b><button class="channel active" data-channel="general"> general</button><button class="channel" data-channel="recomendaciones"> recomendaciones</button><button class="channel" data-channel="fanart"> fanart</button><button class="channel" data-channel="spoilers">️ spoilers</button></aside><div><h3 id="channelTitle"># general</h3><div id="chatMessages" class="chatbox" aria-live="polite"><div class="msg"><b>Hina:</b> ¡Holaaa! ¿Qué anime están viendo? </div><div class="msg"><b>Kuro:</b> Dejen sus recomendaciones aquí </div></div><form id="chatForm"><input id="chatName" class="field" placeholder="Tu nombre" value="Invitad@"><input id="chatInput" class="field" placeholder="Escribe en el canal..." required><button>Enviar mensaje</button></form></div></div></section>
+
+<section id="chat" class="panel chat-page">
+  <button class="back-home" data-open="casa">← Volver al inicio</button>
+  <div class="discord-shell">
+    <aside class="discord-sidebar">
+      <h2>Chat</h2><div class="discord-server">🌐 Comunidad</div>
+      <div class="discord-channel active"># general</div><div class="discord-channel"># comparte</div>
+      <p class="discord-note">Cuida tu privacidad: evita compartir datos personales.</p>
+    </aside>
+    <div class="discord-main">
+      <div class="discord-top"><strong># general</strong><span>Chat de la comunidad</span></div>
+      <div id="globalMessages" class="discord-messages" aria-live="polite"><div class="discord-welcome"><strong>¡Bienvenid@ al chat!</strong><br>Comparte mensajes, imágenes y videos en esta demo.</div></div>
+      <form id="globalChatForm" class="discord-compose">
+        <input id="globalChatName" class="field" value="Invitad@" maxlength="24" aria-label="Tu nombre">
+        <textarea id="globalChatText" class="field" rows="2" maxlength="500" placeholder="Escribe un mensaje..." aria-label="Mensaje"></textarea>
+        <label class="attach-label" for="globalChatFiles">＋ Foto o video</label>
+        <input id="globalChatFiles" type="file" accept="image/*,video/*" multiple hidden>
+        <button type="submit">Enviar</button>
+      </form>
+      <p class="discord-local-note">Versión de demostración: los mensajes y archivos solo se muestran en este navegador. Para que otras personas puedan conectarse desde cualquier lugar se necesita un servidor y cuentas de usuario.</p>
+    </div>
+  </div>
+</section>
+<section id="ipod" class="panel"><button class="back-home" data-open="casa">← Volver al inicio</button>
+<h2 id="ipodTitle">ipod</h2>
+<p>Gira la rueda para recorrer tu música y usa los botones para controlar el reproductor.</p>
+<div class="ipod-area">
+  <div class="ipod-body" id="ipodDevice" aria-label="iPod Nano rosa">
+    <div class="ipod-screen-bezel">
+      <div class="ipod-lcd">
+        <div class="ipod-lcd-header">
+          <span id="screenMode">Music</span>
+          <span style="display:flex;align-items:center;gap:5px"><span id="playStatus">Ⅱ</span><span style="display:inline-block;width:15px;height:7px;border:1px solid #68798a;padding:1px"><span style="display:block;width:75%;height:100%;background:#76ad83"></span></span></span>
+        </div>
+        <div class="ipod-lcd-content">
+          <div id="ipodMenuList" class="ipod-menu-list" hidden></div>
+          <div id="screenSong">ipod</div>
+          <div id="screenArtist">Pulsa MENU para empezar</div>
+          <div class="progress"><span id="progressBar"></span></div>
+        </div>
+        <div class="ipod-lcd-footer"><span id="elapsed">0:00</span><span id="duration">0:00</span></div>
+      </div>
+    </div>
+    <div class="ipod-wheel" id="ipodWheel" aria-label="Rueda del iPod">
+      <button class="wheel-btn wheel-menu" data-action="menu" aria-label="Menú">MENU</button>
+      <button class="wheel-btn wheel-prev" data-action="prev" aria-label="Canción anterior" title="Canción anterior">⏮</button>
+      <button class="wheel-btn wheel-next" data-action="next" aria-label="Canción siguiente" title="Canción siguiente">⏭</button>
+      <button class="wheel-btn wheel-play" data-action="play" aria-label="Reproducir o pausar" title="Reproducir o pausar">▶Ⅱ</button>
+      <button class="wheel-center" data-action="select" aria-label="Seleccionar" title="Seleccionar"></button>
+    </div>
+    <div class="wheel-hint"> </div>
+  </div>
+  <div>
+    <h3 id="ipodHeading">Music</h3>
+    <p class="muted">Agrega tus canciones MP3 desde tu computadora:</p>
+    <label class="mp3-label" for="mp3Files">Añadir música MP3</label>
+    <input id="mp3Files" class="field" type="file" accept="audio/mpeg,audio/mp3,.mp3" multiple>
+    <ol id="songList" class="song-list"></ol>
+    <audio id="audioPlayer" preload="metadata"></audio>
+    <p id="ipodStatus" class="muted" aria-live="polite">Selecciona una canción o añade tus archivos MP3.</p>
+  </div>
+</div>
+<div class="metro-volume" aria-label="Control de volumen de música">
+  <label for="metroVolume"><span class="volume-title">VOLUMEN DE LA MÚSICA</span><span class="volume-value" id="metroVolumeValue">70%</span></label>
+  <div class="volume-controls"><span aria-hidden="true">−</span><input id="metroVolume" type="range" min="0" max="100" value="70" step="1" aria-label="Subir o bajar volumen"><span aria-hidden="true">＋</span></div>
+</div>
+</section>
+
+<section id="google-search" class="panel google-search-panel">
+  <button class="back-home" data-open="casa">← Volver al inicio</button>
+  <h2>Google Search</h2>
+  <p class="google-search-intro">Busca en la web desde MetroSpace.</p>
+  <div class="google-search-frame">
+    <div class="gcse-search"></div>
+    <div id="googleSetupNote" class="google-setup-note">
+      <strong>Falta conectar tu buscador.</strong><br>
+      Para mostrar resultados aquí mismo, Google necesita el ID de tu motor de búsqueda (cx).
+      Cuando lo tengas, reemplaza <code>PEGA_AQUI_TU_ID_CX</code> en el código de esta página.
+      No necesitas poner una API key ni una contraseña.
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
